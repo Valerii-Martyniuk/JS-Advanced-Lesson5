@@ -1,0 +1,17 @@
+<div class="topInfo">
+  <h1>Play your day!</h1>
+  <h2>User:Ivan. Count of Tasks: {{ tasksList.length }}</h2>
+</div>
+<hr />
+<div class="moreTask">
+  <input type="text" [(ngModel)]="oneMoreTask" />
+  <button (click)="pushTask()">Add</button>
+</div>
+<hr />
+
+<app-child [tasks]="tasksList" (childTask)="getChenge($event)"></app-child>
+
+<div class="chengeTaskDiv" *ngIf="display">
+  <input type="text" [(ngModel)]="chengeData" />
+  <button (click)="reloadTask()">Chenge</button>
+</div>

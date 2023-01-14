@@ -1,0 +1,34 @@
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a [routerLink]="['cenzor']" routerLinkActive="active-rout" class="nav-link"
+      >Censor</a
+    >
+  </li>
+  <li class="nav-item">
+    <a
+      [routerLink]="['userlist']"
+      routerLinkActive="active-rout"
+      class="nav-link"
+      >Users</a
+    >
+  </li>
+  <li class="nav-item">
+    <a
+      [routerLink]="['tasklist']"
+      routerLinkActive="active-rout"
+      class="nav-link"
+      >Task</a
+    >
+  </li>
+  <li class="nav-item">
+    <a
+      [routerLink]="['/takelist']"
+      routerLinkActive="active-rout"
+      class="nav-link"
+      style="color: 'red'"
+      >Back To Home</a
+    >
+  </li>
+</ul>
+
+<router-outlet></router-outlet>

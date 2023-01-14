@@ -1,0 +1,20 @@
+img {
+  width: 25vw;
+  height: 25vh;
+  margin: 0 1vw;
+  cursor: pointer;
+}
+img:hover {
+  border: 1px solid #000;
+}
+span {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.img-table {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

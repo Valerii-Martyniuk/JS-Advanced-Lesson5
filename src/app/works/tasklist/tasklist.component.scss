@@ -1,0 +1,32 @@
+hr {
+  width: 90%;
+  margin: 0 auto;
+}
+.topInfo {
+  width: 90%;
+  margin: 0 auto;
+}
+.moreTask,
+.chengeTaskDiv {
+  width: 90%;
+  margin: 0 auto;
+  input {
+    width: 50%;
+    height: 25px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  button {
+    width: 60px;
+    height: 25px;
+    background-color: green;
+    border: none;
+  }
+  button:hover {
+    font-size: 16px;
+  }
+}
+// .chengeTaskDiv {
+//   display: none;
+// }

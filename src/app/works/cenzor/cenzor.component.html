@@ -1,0 +1,33 @@
+<div class="conrainerCenz">
+  <div class="words d">
+    <p><span>Bad words:</span>{{ badWordsAll }}</p>
+  </div>
+  <div class="info d">
+    <input type="text" class="inp-text" [(ngModel)]="badWord" />
+    <input
+      type="button"
+      value="Add"
+      class="add-btn btnCenzo"
+      (click)="addWord()"
+    />
+    <input
+      type="button"
+      value="Reset"
+      class="reset-btn btnCenzo"
+      (click)="reset()"
+    />
+  </div>
+  <div class="d">
+    <textarea id="" cols="40" rows="10" [(ngModel)]="coverText">{{
+      coverText
+    }}</textarea>
+  </div>
+  <div class="d">
+    <input
+      type="button"
+      value="Cenzor"
+      class="bottom-btn btnCenzo"
+      (click)="cenzorFunction()"
+    />
+  </div>
+</div>

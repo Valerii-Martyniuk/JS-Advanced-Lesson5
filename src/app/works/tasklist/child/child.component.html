@@ -1,0 +1,29 @@
+<table>
+  <thead>
+    <tr>
+      <td>#</td>
+      <td>Task</td>
+      <td>Check</td>
+      <td>Done/In Progress</td>
+      <td>Edit</td>
+      <td>Delete</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let task of tasks; index as i">
+      <td>{{ i + 1 }}</td>
+      <td>{{ task.task }}</td>
+      <td>
+        <input type="checkbox" (click)="change(i)" [checked]="task.check" />
+      </td>
+      <td
+        [textContent]="task.check ? 'Done' : 'In Progress'"
+        [style.color]="task.check ? 'green' : 'red'"
+      ></td>
+      <td><button (click)="chengeTaskBtn(i)">Edit</button></td>
+      <td>
+        <button (click)="deleteTask(i)" [disabled]="!task.check">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
